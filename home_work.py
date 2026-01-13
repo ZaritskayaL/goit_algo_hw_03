@@ -7,7 +7,7 @@ del language["year"]
 print(language)
 
 # get_days_from_today(date)
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta    
 def get_days_from_today(date_str):
     try:
         start_date = datetime.strptime(date_str, 'yyyy-MM-dd')
