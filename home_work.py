@@ -1,10 +1,10 @@
-language = {"name": "Python", "version": 3.11}
-print(language)
-language["version"] = 3.12
-language["year"] =1991
-print(language)
-del language["year"]
-print(language)
+# language = {"name": "Python", "version": 3.11}
+# print(language)
+# language["version"] = 3.12
+# language["year"] =1991
+# print(language)
+# del language["year"]
+# print(language)
 
 # get_days_from_today(date)
 from datetime import datetime, timedelta    
