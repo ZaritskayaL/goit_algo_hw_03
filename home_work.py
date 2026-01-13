@@ -10,7 +10,7 @@ print(language)
 from datetime import datetime, timedelta    
 def get_days_from_today(date_str):
     try:
-        start_date = datetime.strptime(date_str, 'yyyy-MM-dd')
+        start_date = datetime.strptime(date_str, '%Y-%m-%d')
         return(datetime.today() - start_date)
     except ValueError:
         return None
