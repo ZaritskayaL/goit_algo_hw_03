@@ -15,3 +15,16 @@ def get_days_from_today(date_str):
     except ValueError:
         return None
 print(get_days_from_today('2021-10-09'))
+
+#get_numbers_tickets(min, max, quantity)
+import random
+def get_numbers_tickets(min, max, quantity):
+    if quantity > (max - min + 1):
+        raise ValueError("Quantity exceeds the range of unique numbers available.")
+    
+    return random.sample(range(min, max + 1), quantity)
+
+# ticket_number = int(input('Enter your ticket number '))
+
+lottery_ticket = get_numbers_tickets(1, 100, 10)
+print("Lottery ticket numbers:", lottery_ticket)
