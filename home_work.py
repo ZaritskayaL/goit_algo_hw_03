@@ -24,7 +24,6 @@ def get_numbers_tickets(min, max, quantity):
     
     return random.sample(range(min, max + 1), quantity)
 
-# ticket_number = int(input('Enter your ticket number '))
-
 lottery_ticket = get_numbers_tickets(1, 100, 10)
 print("Lottery ticket numbers:", lottery_ticket)
+
