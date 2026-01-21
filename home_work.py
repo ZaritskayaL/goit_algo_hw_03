@@ -24,6 +24,10 @@ def get_numbers_tickets(min, max, quantity):
     
     return random.sample(range(min, max + 1), quantity)
 
-lottery_ticket = get_numbers_tickets(1, 100, 10)
-print("Lottery ticket numbers:", lottery_ticket)
+lottery_ticket = get_numbers_tickets(1, 36, 5)
+print(f"Lottery ticket numbers: {lottery_ticket}")
 
+# normalize_phone(phone_number)
+# import re
+# def normalize_phone(phone_number):
+#     phone_number = re.
