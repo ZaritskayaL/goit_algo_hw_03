@@ -1,11 +1,3 @@
-# language = {"name": "Python", "version": 3.11}
-# print(language)
-# language["version"] = 3.12
-# language["year"] =1991
-# print(language)
-# del language["year"]
-# print(language)
-
 # get_days_from_today(date)
 from datetime import datetime, timedelta    
 def get_days_from_today(date_str):
@@ -28,6 +20,24 @@ lottery_ticket = get_numbers_tickets(1, 36, 5)
 print(f"Lottery ticket numbers: {lottery_ticket}")
 
 # normalize_phone(phone_number)
-# import re
-# def normalize_phone(phone_number):
-#     phone_number = re.
+
+import re
+phone_number = ["067\\t123 4567",
+    "(095) 234-5678\\n",
+    "+380 44 123 4567",
+    "380501234567",
+    "    +38(050)123-32-34",
+    "     0503451234",
+    "(050)8889900",
+    "38050-111-22-22",
+    "38050 111 22 11   ", 
+    ]
+def normalize_phone(phone_number: str)-> str:
+cleaned = re.sub(r'[^\d+]', '', phone_number)
+
+# вот здесь я запуталась )))
+  
+print(f'Normalize phone numbers for spam:', normalize_phone)
+
+
+    
